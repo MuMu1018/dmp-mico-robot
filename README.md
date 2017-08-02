@@ -83,3 +83,20 @@ $ catkin_make
 $ roslaunch mico_interaction mico_moveit_sim.launch
 then robot will be open in moveit(rviz) and gazebo
 ```
+## Combination! Learn DMP from bag files and execure on MICO-robot
+**Notes:**
+1. Read bags:
+```
+Terminal 1:
+cd [bagPath]
+rosbag play [bagFile]
+
+Terminal 2:
+roscore
+
+Terminal 3: (make sure when Terminal 1 is running)
+rostopic list
+rostopic echo topicName
+```
+2.
+Example (how to read bags and create DMP from the demonstration): https://github.com/awesomebytes/dmp_reem_razer/blob/master/src/dmp_reem_with_orientation.py
