@@ -27,13 +27,13 @@ https://github.com/sniekum/dmp (Python)
 
 
 ### For C++ code:
-Download the dmpbbo package and follow the instructions in [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt)
+Download the dmpbbo package and follow the instructions in README.md.
 
 `~$ cd catkin_ws/src`
 
 `~/catkin_ws/src$ git clone https://github.com/stulp/dmpbbo.git`
 
-#### Problem 1:
+#### Problems:
 No idea about how to use `sudo make install`, lack of understanding about making progress.
 
 + `~/catkin_ws/src$ cd dmpbbo`
@@ -48,9 +48,8 @@ No idea about how to use `sudo make install`, lack of understanding about making
 
 + `~/catkin_ws/src/dmpbbo/build_dir$ sudo make install`
 
-After these steps, all .exe file will be written into the `~/Desktop/dmpbbo/bin` folder
++ After these steps, all .exe file will be written into the `~/Desktop/dmpbbo/bin` folder
 
-#### Problem 2:
 Follow [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt) and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, it will fail and exit at 64%.
 
 + run `cmake ..` instead, then it can successfully make to 100% .
