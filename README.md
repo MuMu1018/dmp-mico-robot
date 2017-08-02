@@ -31,10 +31,7 @@ Download the dmpbbo package and follow the instructions in README.md
 
 `~/catkin_ws/src$ git clone https://github.com/stulp/dmpbbo.git`
 
-**Notes:**
-to learn how to use and code
-+ look at the `docs/tutorial.pdf`
-+ and demos inside every module. They are well documented and can help understand.
+**Notes:** to learn how to use and code, look at the `docs/tutorial.pdf` and demos inside every module. They are well documented and can help understand.
 
 #### Problems & Solutions:
 1. No idea about how to use `sudo make install`, lack of understanding about making progress.
@@ -56,7 +53,9 @@ Download the dmp package and follow the instructions in README.md
 
 Create a new folder `/dmp/scripts`, and add `dmp_client.py`. Using sample code provided [here](http://www.ros.org/wiki/dmp).
 
-**Notes:**
-+ `/scripts` folder is for Python code, while `/src` folder is for C++ code.
+**Tips:**: `/scripts` folder is for Python code, while `/src` folder is for C++ code.
+
+**Notes**
+
 + Changing parameters inside to find out how to set the values.
 + start point position `x_0`, start point velocity `x_dot_0`, goal position `goal`, ...
