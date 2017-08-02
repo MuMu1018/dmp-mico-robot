@@ -31,24 +31,24 @@ Download the dmpbbo package and follow the instructions in [INSTALL.txt](https:/
 
 `~/catkin_ws/src$ git clone ...` (link of C++ code)
 
-+ Problem 1:
+#### Problem 1:
 No idea where to do "sudo make install", lack of understanding about making progress
-+ Solution 1:
-`~/catkin_ws/src$ cd dmpbbo`
 
-`~/catkin_ws/src/dmpbbo$ mkdir -p build_dir`
++ `~/catkin_ws/src$ cd dmpbbo`
 
-`~/catkin_ws/src/dmpbbo$ cd build_dir/`
++ `~/catkin_ws/src/dmpbbo$ mkdir -p build_dir`
 
-`~/catkin_ws/src/dmpbbo/build_dir$ cmake ..`
++ `~/catkin_ws/src/dmpbbo$ cd build_dir/`
 
-`~/catkin_ws/src/dmpbbo/build_dir$ make`
++ `~/catkin_ws/src/dmpbbo/build_dir$ cmake ..`
 
-`~/catkin_ws/src/dmpbbo/build_dir$ sudo make install`
++ `~/catkin_ws/src/dmpbbo/build_dir$ make`
+
++ `~/catkin_ws/src/dmpbbo/build_dir$ sudo make install`
 
 After these stpes, all .exe file will be written into the /bin folder, list them with command `~/Desktop/dmpbbo/bin$ ls`
 
-+ Problem 2:
+#### Problem 2:
 Follow [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt) and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, it will fail and exit at 64%.
-+ Solution 2:
-run `cmake ..` instead, then it can make 100% successfully.
+
++ run `cmake ..` instead, then it can make 100% successfully.
