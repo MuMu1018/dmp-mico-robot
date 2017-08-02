@@ -31,7 +31,8 @@ Download the dmpbbo package and follow the instructions in README.md
 
 `~/catkin_ws/src$ git clone https://github.com/stulp/dmpbbo.git`
 
-**Tips** to learn how to use and code
+**Notes:**
+to learn how to use and code
 + look at the `docs/tutorial.pdf`
 + and demos inside every module. They are well documented and can help understand.
 
@@ -55,8 +56,7 @@ Download the dmp package and follow the instructions in README.md
 
 Create a new folder `/dmp/scripts`, and add `dmp_client.py`. Using sample code provided [here](http://www.ros.org/wiki/dmp).
 
-**Notes:** `/scripts` folder is for Python code, while `/src` folder is for C++ code.
-
-**Tips**
+**Notes:**
++ `/scripts` folder is for Python code, while `/src` folder is for C++ code.
 + Changing parameters inside to find out how to set the values.
 + start point position `x_0`, start point velocity `x_dot_0`, goal position `goal`, ...
