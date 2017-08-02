@@ -31,7 +31,7 @@ Download the dmpbbo package and follow the instructions in README.md
 
 `~/catkin_ws/src$ git clone https://github.com/stulp/dmpbbo.git`
 
-
+#### Problems & Solutions:
 1. No idea about how to use `sudo make install`, lack of understanding about making progress.
 
 + `~/catkin_ws/src$ cd dmpbbo`
