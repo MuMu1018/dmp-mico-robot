@@ -31,23 +31,35 @@ Download the dmpbbo package and follow the instructions in README.md
 
 `~/catkin_ws/src$ git clone https://github.com/stulp/dmpbbo.git`
 
+**Learn how to use the code**
+
++ Looking at the `docs/tutorial.pdf`
+
++ Looking at demos inside every module. They are well documented and can help us understand how to use the code.
+
 #### Problems & Solutions:
 1. No idea about how to use `sudo make install`, lack of understanding about making progress.
 
 + `~/catkin_ws/src$ cd dmpbbo`
-
 + `~/catkin_ws/src/dmpbbo$ mkdir -p build_dir`
-
 + `~/catkin_ws/src/dmpbbo$ cd build_dir/`
-
 + `~/catkin_ws/src/dmpbbo/build_dir$ cmake ..`
-
 + `~/catkin_ws/src/dmpbbo/build_dir$ make`
-
 + `~/catkin_ws/src/dmpbbo/build_dir$ sudo make install`
-
 + after these steps, all .exe file will be written into the `~/Desktop/dmpbbo/bin` folder
 
 2. If run `cmake .. -DCMAKE_BUILD_TYPE=Release` as described in [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt), it will fail and exit at 64%.
 
 + run `cmake ..` instead, and it can successfully 100% make.
+
+### For Python code:
+Download the dmp package and follow the instructions in README.md
+
+Create a new folder `/dmp/scripts`, and add `dmp_client.py`. Using sample code provided [here](http://www.ros.org/wiki/dmp).
+
+Tip: `/scripts` folder is for Python code, while `/src` folder is for C++ code.
+
+**Notes**
+
++ Changing parameters inside to find out how to set the values.
++ start point position `x_0`, start point velocity `x_dot_0`, goal position `goal`, ...
