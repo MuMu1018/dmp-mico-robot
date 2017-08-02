@@ -12,7 +12,7 @@ http://www.cs.utexas.edu/~sniekum/classes/RLFD-F15/papers/Pastor09.pdf
 ## System Installation
 Installing Linux (Ubuntu 16.04)
 
-Tip: Do a dual boot instead of using virtualBox (I use macOS 10.12.6)
+**Tips:** Do a dual boot instead of using virtualBox (I use macOS 10.12.6)
 
 ## ROS basic Tutorials
 http://wiki.ros.org/ROS/Tutorials (1-12)
@@ -31,11 +31,9 @@ Download the dmpbbo package and follow the instructions in README.md
 
 `~/catkin_ws/src$ git clone https://github.com/stulp/dmpbbo.git`
 
-**Learn how to use the code**
-
-+ Looking at the `docs/tutorial.pdf`
-
-+ Looking at demos inside every module. They are well documented and can help us understand how to use the code.
+**Tips** to learn how to use and code
++ look at the `docs/tutorial.pdf`
++ and demos inside every module. They are well documented and can help understand.
 
 #### Problems & Solutions:
 1. No idea about how to use `sudo make install`, lack of understanding about making progress.
@@ -57,9 +55,8 @@ Download the dmp package and follow the instructions in README.md
 
 Create a new folder `/dmp/scripts`, and add `dmp_client.py`. Using sample code provided [here](http://www.ros.org/wiki/dmp).
 
-Tip: `/scripts` folder is for Python code, while `/src` folder is for C++ code.
+**Notes:** `/scripts` folder is for Python code, while `/src` folder is for C++ code.
 
-**Notes**
-
+**Tips**
 + Changing parameters inside to find out how to set the values.
 + start point position `x_0`, start point velocity `x_dot_0`, goal position `goal`, ...
