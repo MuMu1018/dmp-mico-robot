@@ -35,19 +35,19 @@ Download the dmpbbo package and follow the instructions in README.md
 
 #### Problems & Solutions:
 1. No idea about how to use `sudo make install`, lack of understanding about making progress.
-
-+ `~/catkin_ws/src$ cd dmpbbo`
-+ `~/catkin_ws/src/dmpbbo$ mkdir -p build_dir`
-+ `~/catkin_ws/src/dmpbbo$ cd build_dir/`
-+ `~/catkin_ws/src/dmpbbo/build_dir$ cmake ..`
-+ `~/catkin_ws/src/dmpbbo/build_dir$ make`
-+ `~/catkin_ws/src/dmpbbo/build_dir$ sudo make install`
-+ after these steps, all .exe file will be written into the `~/Desktop/dmpbbo/bin` folder
-
+```
+~/catkin_ws/src$ cd dmpbbo
+~/catkin_ws/src/dmpbbo$ mkdir -p build_dir
+~/catkin_ws/src/dmpbbo$ cd build_dir/
+~/catkin_ws/src/dmpbbo/build_dir$ cmake ..
+~/catkin_ws/src/dmpbbo/build_dir$ make
+~/catkin_ws/src/dmpbbo/build_dir$ sudo make install
+after these steps, all .exe file will be written into the `~/Desktop/dmpbbo/bin` folder
+```
 2. If run `cmake .. -DCMAKE_BUILD_TYPE=Release` as described in [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt), it will fail and exit at 64%.
-
-+ run `cmake ..` instead, and it can successfully 100% make.
-
+```
+run `cmake ..` instead, and it can successfully 100% make.
+```
 ### For Python code:
 Download the dmp package and follow the instructions in README.md
 
@@ -61,17 +61,15 @@ Create a new folder `/dmp/scripts`, and add `dmp_client.py`. Using sample code p
 + start point position `x_0`, start point velocity `x_dot_0`, goal position `goal`, ...
 
 ## Moveit! Tutorials (based on MICO-robot)
-http://docs.ros.org/kinetic/api/moveit_tutorials/html/
-
-Setup Moveit! and follow the tutorials, especially [Kinematic Model Tutorial](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/kinematics/src/doc/kinematic_model_tutorial.html)
+[Setup Moveit!](http://docs.ros.org/kinetic/api/moveit_tutorials/html/) and follow the tutorials, especially [Kinematic Model Tutorial](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/kinematics/src/doc/kinematic_model_tutorial.html)
 
 Setup MICO-robot package in ROS workspace: https://github.com/argallab/mico_base (invitation needed; using ros-kinetic branch)
 
 #### Problems & Solutions:
 1. Cannot get find the pr2_moveit_config ROS package. When `sudo apt-get install ros-kinetic-moveit-pr2`, it will return `E: Unable to locate package ros-kinetic-moveit-pr2`
-
-+ using ROS package provided by lab, follow the tutorial code on MICO robot directly (instead of on PR2).
-
+```
+using ROS package provided by lab, follow the tutorial code on MICO robot directly (instead of on PR2).
+```
 2. How to setup mico_base package in a ROS workspace and catkin_make
 ```
 $ cd ~/catkin_ws/src
