@@ -16,7 +16,9 @@ Tip: Do a dual boot instead of using virtualBox (I use macOS 10.12.6)
 ## ROS basic Tutorials
 http://wiki.ros.org/ROS/Tutorials (1-12)
 
-## dmp codes, understanding and get them running
+## DMP codes
+Understanding DMP and get codes running
+
 https://github.com/stulp/dmpbbo (C++)
 
 https://github.com/sniekum/dmp (Python)
@@ -25,14 +27,13 @@ https://github.com/sniekum/dmp (Python)
 ### For C++ code:
 Download the dmpbbo package and follow the instructions in [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt)
 
-~$ cd catkin_ws/src
+`~$ cd catkin_ws/src`
 
-~/catkin_ws/src$ git clone ... (link of C++ code)
+`~/catkin_ws/src$ git clone ...` (link of C++ code)
 
-
-#### Problem 1:
++ Problem 1:
 No idea where to do "sudo make install", lack of understanding about making progress
-#### Solution 1:
++ Solution 1:
 `~/catkin_ws/src$ cd dmpbbo`
 
 `~/catkin_ws/src/dmpbbo$ mkdir -p build_dir`
@@ -47,7 +48,7 @@ No idea where to do "sudo make install", lack of understanding about making prog
 
 After these stpes, all .exe file will be written into the /bin folder, list them with command `~/Desktop/dmpbbo/bin$ ls`
 
-#### Problem 2:
-If follow the instructions in INSTALL.txt and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, it will fail and exit at 64%.
-#### Solution 2:
++ Problem 2:
+Follow [INSTALL.txt](https://github.com/stulp/dmpbbo/blob/master/LICENSE.txt) and run `cmake .. -DCMAKE_BUILD_TYPE=Release`, it will fail and exit at 64%.
++ Solution 2:
 run `cmake ..` instead, then it can make 100% successfully.
