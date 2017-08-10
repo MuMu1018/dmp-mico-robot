@@ -54,9 +54,13 @@ Download the dmp package and follow the instructions in README.md
 Create a new folder `/dmp/scripts`, and add `dmp_client.py`. Using sample code provided [here](http://www.ros.org/wiki/dmp).
 
 `chmod +x scripts/dmp_client.py`
+
 `cd ~/catkin_ws`
+
 `catkin_make`
+
 `roslaunch dmp dmp.launch`
+
 `rosrun dmp dmp_client.py`
 
 **Tips:** `/scripts` folder is for Python code, while `/src` folder is for C++ code.
