@@ -93,6 +93,8 @@ $ catkin_make
 $ roslaunch mico_interaction mico_moveit_sim.launch
 then robot will be open in moveit(rviz) and gazebo
 ```
+![Rviz_init](https://github.com/MuMu1018/dmp-mico-robot/blob/master/Rviz_init.png)
+![Moveit_init](https://github.com/MuMu1018/dmp-mico-robot/blob/master/moveit_init.png)
 ## Combination! Learn DMP from bag files and execure on MICO-robot
 **Notes:**
 1. Read bags:
