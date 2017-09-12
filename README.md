@@ -3,7 +3,7 @@ Author: Mengjiao Hong
 
 Begin date: July 6
 
-I create this document in order to record my progress from scratch, including the problems and solutions to them. Thanks a lot for all the help come from Siddarth Jain, Mahdieh Nejati, and Professor Brenna Argall.
+I create this document in order to record my progress from scratch, including the problems and solutions to them. Thanks a lot for all the help come from Siddarth Jain, Mahdieh Nejati, and [Professor Brenna Argall](http://users.eecs.northwestern.edu/~argall/).
 
 ## Introduction
 An article about DMP Paper Implementation:
