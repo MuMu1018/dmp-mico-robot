@@ -95,7 +95,8 @@ then robot will be open in moveit(rviz) and gazebo
 ```
 ![Moveit_init](https://github.com/MuMu1018/dmp-mico-robot/blob/master/moveit_init.png)
 ![Gazebo_init](https://github.com/MuMu1018/dmp-mico-robot/blob/master/gazebo_init.png)
-## Combination! Learn DMP from bag files and execure on MICO-robot
+
+## Combination! Learn DMP from bag files and execute on MICO-robot
 **Notes:**
 1. Read bags:
 ```
@@ -110,5 +111,15 @@ Terminal 3: (make sure when Terminal 1 is running)
 rostopic list
 rostopic echo topicName
 ```
-2.
-Example (how to read bags and create DMP from the demonstration): https://github.com/awesomebytes/dmp_reem_razer/blob/master/src/dmp_reem_with_orientation.py
+2. Read from bags and create DMP from the demo in ROS environment
+Example: https://github.com/awesomebytes/dmp_reem_razer/blob/master/src/dmp_reem_with_orientation.py
+
+My code is [here]().
+
+The basic theroy states in the article: Learning and Generalization of Motor Skills by Learning from Demonstration (link: )
+
+The black line is the demonstration motion path, then we change the start points and plot them in same figure:
+![Multi_Start_Dmp]()
+
+3. Simulate new motion plan on Mico_robot in Rviz and gazebo
+
